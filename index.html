@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa & Estilo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Casa & Estilo</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#us">Nosotros</a></li>
+          <li><a href="#precio">Solicitar Presupuesto</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section1">
+      <article>
+        <div id="home">
+          <h2>Diseño de Muebles Modernos de Melamina</h2>
+          <p>
+            La opción perfecta para quienes buscan un estilo sofisticado,
+            minimalista y funcional, con acabados duraderos para sus espacios.
+          </p>
+          <a
+            href="https://wa.me/3107289523?text= ¡Hola! Gracias por tu interés en Diseño de Muebles Modernos de Melamina. Para ofrecerte un presupuesto preciso, me gustaría saber más sobre lo que necesitas"
+            class="float-wa"
+            target="_blank"
+            >Contactar</a
+          >
+        </div>
+      </article>
+    </section>
+
+    <section id="services">
+      <h2>Servicios</h2>
+      <div class="servicios">
+        <div class="serv">
+          <img src="./img/pexels-heyho-7214450.jpg" alt="" />
+          <div class="tarjeta">
+            <h4>Muebles de Cocina</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              voluptatibus.
+            </p>
+          </div>
+        </div>
+        <div class="serv">
+          <img src="./img/pexels-heyho-6908502.jpg" alt="" />
+          <div class="tarjeta">
+            <h4>Muebles de Sala</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              voluptatibus.
+            </p>
+          </div>
+        </div>
+        <div class="serv">
+          <img src="./img/pexels-heyho-6523275.jpg" alt="" />
+          <div class="tarjeta">
+            <h4>Muebles de Habitación</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              voluptatibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="us">
+      <div class="container-us">
+        <h2>Nosotros</h2>
+        <h4>Especialistas en Fabricar Muebles para el Hogar y Oficina</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem iure
+          dolorum cumque natus rem nemo earum repellat blanditiis vitae optio?
+          Ad alias sed veniam ullam a et mollitia fuga nihil sapiente!
+          Distinctio delectus impedit consequuntur quisquam modi ipsa officia
+          quae.
+        </p>
+        <a
+          href="https://wa.me/3107289523?text= ¡Hola! Gracias por tu interés en Diseño de Muebles Modernos de Melamina. Para ofrecerte un presupuesto preciso, me gustaría saber más sobre lo que necesitas"
+          class="float-wa"
+          target="_blank"
+          >Hablemos</a
+        >
+      </div>
+      <img src="./img/pexels-tima-miroshnichenko-6790966.jpg" alt="" />
+    </section>
+
+    <section id="precio">
+        <h2>Solicitar Presupuesto</h2>
+       <p>Calle Ejemplo, 1
+        Cádiz, Andalucía 11001</p>
+        <p>(123) 456-7890</p>
+        <a
+          href="https://wa.me/3107289523?text= ¡Hola! Gracias por tu interés en Diseño de Muebles Modernos de Melamina. Para ofrecerte un presupuesto preciso, me gustaría saber más sobre lo que necesitas"
+          class="float-wa"
+          target="_blank"
+          >Obtener indicaciones</a>
+      </section>
+
+    <section id="contact">
+      <h2>Habla con nosotros</h2>
+      <form>
+        <label for="name">Nombre Completo</label>
+        <input type="text" id="name" required />
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+        <label for="phone">Teléfono</label>
+        <input type="tel" id="phone" required>
+        <label for="message">Escribe tu consulta:</label>
+        <textarea id="message"required></textarea>
+        <button type="submit" onclick="saveData()">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+        <p>Información</p>
+        <div>
+            <p>Servicios</p>
+            <p>Privacidad</p>
+            <p>Políticas</p>
+        </div>
+        <p>© 2024 Casa & Estilo. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+  <script src="./app.js"></script>
+</html>

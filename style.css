@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    background-color: #2b2d42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    width: 100%;
+    color: #fff;
+    position: fixed;
+}
+header h1{
+    font-size: 24px;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav > ul > li >  a {
+    color: #fff;
+}
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/pexels-heyho-6782424.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40%;
+    color: #fff;
+    height: 410px;
+    padding-top: 50px;
+}
+#home > h2{
+    font-size: 36px;
+}
+section h2{
+    font-size: 28px;
+}
+#home > a{
+    color: #fff;
+    padding: 8px 18px 8px 18px;
+    border-radius: 6px;
+    background-color: #d90429;
+    font-weight: bold;
+    font-size: 18px;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2pc;
+  }
+.serv img {
+    width: 300px;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#services {
+    display: flex;
+    margin: 60px auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+.serv {
+    text-align: center;
+    margin: 18px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    color: #000;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.tarjeta {
+    width: 280px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin: -14px auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 1px 4px 0px gray;
+}
+.tarjeta h4{
+    color: #023047;
+    font-size: 18px;
+}
+#us{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    padding: 40px;
+    margin-top: 80px;
+    gap: 1pc;
+    background-color: rgba(218, 217, 217, 0.428);
+}
+#us img{
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 60px;
+}
+.container-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin-right: 20px;
+    margin-left: 60px;
+}
+.container-us > a, #precio > a{
+    color: #fff;
+    padding: 8px 18px 8px 18px;
+    border-radius: 6px;
+    background-color: #d90429;
+    font-weight: bold;
+    width: 16%;
+    text-align: center;
+}
+.container-us > h4{
+    font-size: 20px;
+}
+#precio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+    font-size: 16px;
+}
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    padding: 40px;
+    gap: 16px;
+    background-color: rgba(218, 217, 217, 0.428);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 28%;
+    box-shadow: 0px 0px 4px 0px gainsboro;
+}
+input,
+textarea {
+  border-radius: 2px;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 0px grey;
+}
+input,
+textarea:focus{
+  outline: none;
+}
+button{
+    cursor: pointer;
+    background-color: #d90429;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+footer{
+    background-color: #2b2d42;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 10px 20px 10px;
+}
+footer > div{
+    display: flex;
+    gap: 1pc;
+}
