@@ -16,9 +16,10 @@ header{
     width: 100%;
     color: #fff;
     position: fixed;
+    z-index: 1;
 }
 header h1{
-    font-size: 24px;
+    font-size: 30px;
 }
 nav ul li{
     display: inline;
@@ -33,16 +34,16 @@ nav > ul > li >  a {
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/pexels-heyho-6782424.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/pexels-heyho-6782424 (1).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40%;
     color: #fff;
-    height: 410px;
+    height: 100vh;
     padding-top: 50px;
 }
 #home > h2{
-    font-size: 36px;
+    font-size: 40px;
 }
 section h2{
     font-size: 28px;
@@ -82,6 +83,7 @@ section h2{
     color: #000;
     transition: 0.2s;
     cursor: pointer;
+    position: relative;
 }
 .tarjeta {
     width: 280px;
@@ -103,14 +105,14 @@ section h2{
 #us{
     display: flex;
     justify-content: space-between;
-    height: 400px;
+    height: 100%;
     padding: 40px;
     margin-top: 80px;
     gap: 1pc;
     background-color: rgba(218, 217, 217, 0.428);
 }
 #us img{
-    width: 400px;
+    width: 40%;
     border-radius: 10px;
     margin-right: 60px;
 }
@@ -128,7 +130,7 @@ section h2{
     border-radius: 6px;
     background-color: #d90429;
     font-weight: bold;
-    width: 16%;
+    width: 20%;
     text-align: center;
 }
 .container-us > h4{
@@ -192,9 +194,151 @@ footer{
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    padding: 10px 10px 20px 10px;
+    padding: 8px 8px 18px 8px;
 }
 footer > div{
     display: flex;
     gap: 1pc;
+}
+.serv:hover, .tarjeta:hover{
+    filter: brightness(70%);
+}
+nav > ul > li >  a:hover{
+    color: #fcbf49;
+    border-bottom: 1px solid #fcbf49;
+}
+#home > a:hover, .container-us > a:hover, #precio > a:hover, button:hover{
+    background-color: #b80321;
+}
+@media screen and (max-width: 576px){
+    #home{
+        width: 100%;
+        padding-top: 100px;
+        padding: 10px;
+    }
+    #home > h2{
+        font-size: 28px;
+    }
+    #home > a{
+        font-size: 16px;
+    }
+    .servicios{
+        grid-template-columns: auto;
+    }
+    .serv img{
+        width: 280px;
+    }
+    .tarjeta{
+        width: 259px;
+    }
+    #us{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 10px;
+        justify-content: normal;
+    }
+    #us img{
+        width: 70%;
+        margin: 0;
+    }
+    form{
+        width: 70%;
+    }
+    .container-us > a, #precio > a{
+        width: 44%;
+    }
+    .container-us{
+        align-items: center;
+        margin: 0;
+    }
+    #contact{
+        padding: 20px;
+    }
+    footer{
+        font-size: 12px;
+    }
+    h4, h2{
+        font-size: 24px;
+    }
+    header{
+        flex-direction: column;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .servicios{
+        grid-template-columns: auto;
+    }
+    .serv img{
+        width: 280px;
+    }
+    .tarjeta{
+        width: 259px;
+    }
+    #us img{
+        width: 50%;
+        margin: 0;
+    }
+    .container-us {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .container-us > a{
+        width: 40%;
+    }
+    form{
+        width: 50%;
+    }
+    header{
+        flex-direction: column;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 992px) {
+    #home{
+        padding: 10px;
+        padding-top: 180px;
+        text-align: center;
+    }
+    .servicios{
+        grid-template-columns: auto;
+    }
+    .serv img{
+        width: 280px;
+    }
+    .tarjeta{
+        width: 259px;
+    }
+    form{
+        width: 48%;
+    }
+    #us img{
+        width: 50%;
+        margin: 0;
+    }
+    .container-us {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .container-us > a{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    
 }

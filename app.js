@@ -15,5 +15,5 @@ function saveData() {
             Email: ${emailInput.value}
             Teléfono: ${phoneInput.value}
             Encribe tu consulta : ${messageInput.value}`)
-    } 
+    }
 }
